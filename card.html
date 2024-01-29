@@ -1,126 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Business Card</title>
-  <link rel="stylesheet" type="text/css" href="card/style.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f1f1f1;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Business Card</title>
+    <link rel="stylesheet" type="text/css" href="card/style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+      }
 
-    .digital-card {
-      width: 350px;
-      height: 200px;
-      background: linear-gradient(45deg, #3498db, #2980b9);
-      color: #ffffff;
-      border-radius: 10px;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
-      cursor: pointer;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-    }
+      .digital-card {
+        width: 350px;
+        height: 200px;
+        background: linear-gradient(45deg, #3498db, #2980b9);
+        color: #ffffff;
+        border-radius: 10px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      }
 
-    .digital-card:hover {
-      transform: rotateY(180deg);
-      box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-    }
+      .digital-card:hover {
+        transform: rotateY(180deg);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+      }
 
-    .front, .back {
-      padding: 20px;
-      box-sizing: border-box;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      width: 100%;
-      backface-visibility: hidden;
-    }
+      .front,
+      .back {
+        padding: 20px;
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+      }
 
-    .front {
-      text-align: left;
-      line-height: 26px;
-    }
+      .front {
+        text-align: left;
+        line-height: 26px;
+      }
 
-    .back {
-      background: linear-gradient(45deg, #2980b9, #3498db);
-      transform: rotateY(180deg);
-    }
+      .back {
+        background: linear-gradient(45deg, #2980b9, #3498db);
+        transform: rotateY(180deg);
+      }
 
-    .company {
-      margin-top: 0px;
-      line-height: 20px;
-      font-weight: bold;
-      font-size: x-large;
-    }
+      .company {
+        margin-top: 0px;
+        line-height: 20px;
+        font-weight: bold;
+        font-size: x-large;
+      }
 
-    .tagline {
-      line-height: 20px;
-      margin-bottom: 0px;
-    }
+      .tagline {
+        line-height: 20px;
+        margin-bottom: 0px;
+      }
 
-    .logo {
-      width: 150px;
-      height: 80px;
-      border-radius: 10px;
-      position: absolute;
-      margin-top: 10px;
-      right: 10px;
-      display: inline;
-    }
+      .logo {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+        position: absolute;
+        margin-top: 10px;
+        right: 10px;
+        display: inline;
+      }
 
-    .logo img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 1.0px;
-      margin: 0px;
-    }
+      .logo img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 1px;
+        margin: 0px;
+      }
 
-   
-    .website {
-      font-size: 14px;
-      font-weight: bold;
-      margin-top: 10px;
-      margin-bottom: 0px;
-    }
+      .website {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
 
-    .name {
-      margin-bottom: 0px;
-      font-size: large;
-    }
-  </style>
-</head>
-<body>
-  <div class="digital-card">
-    <div class="front">
-      <div class="company">ICYCODE</div>
-      <div class="tagline">Digital Solution At Hand</div>
-      <div class="https://www.icycode.io">icycode.io</div>
-      <div class="logo">
-        <img src="ICYCODE(2)(1).png" alt="Company Logo">
+      .name {
+        margin-bottom: 0px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="digital-card">
+      <div class="front">
+        <div class="company">ICYCODE</div>
+        <div class="tagline">Digital Solution At Hand</div>
+        <div class="https://www.icycode.io">icycode.io</div>
+        <div class="logo">
+          <img src="ICYCODE(2)(1).png" alt="Company Logo" />
+        </div>
+      </div>
+      <div class="back">
+        <div class="logo">
+          <img src="ICYCODE(2)(1).png" alt="Company Logo" />
+        </div>
+        <div class="name">MIRTIN WACHIRA</div>
+        <div class="location">Nairobi,Kenya</div>
+        <div class="email">info@icycode.io</div>
+        <i class="fa-solid fa-envelope"></i>
+        <div class="phone">+254-703-112-077</div>
+        <div class="role">co-founder</div>
+        <!-- <div class="role">testing git commit --ignore</div> -->
       </div>
     </div>
-    <div class="back">
-      <div class="logo">
-         <img src="ICYCODE(2)(1).png" alt="Company Logo">
-       </div>
-      <div class="name">MIRTIN WACHIRA</div>
-      <div class="location">Nairobi,Kenya</div>
-      <div class="email">info@icycode.io</div>
-      <i class="fa-solid fa-envelope"></i>
-       <div class="phone">+254-703-112-077</div>
-       <div class="role">co-founder</div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
