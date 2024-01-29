@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>icycode Business Card</title>
+      <link rel="stylesheet" type="text/css" href="card/style.css">
+      <style>
+         body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+         }
+
+         .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+
+         .container {
+            perspective: 1000px;
+         }
+
+         .card {
+            width: 300px;
+            height: 180px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+         }
+
+         .card:hover {
+            transform: rotateY(180deg);
+         }
+
+         .front,
+         .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            background-color: #0766AD;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+
+         .front img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+         }
+
+         .company,
+         .tagline,
+         .website {
+            margin-top: 10px;
+            text-align: center;
+         }
+
+         .back {
+            transform: rotateY(180deg);
+         }
+
+         .name,
+         .phone,
+         .location,
+         .founder {
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <section class="section">
+      
+         <div class="container">
+            <div class="card">
+               <div class="front">
+                   
+                 <div class="left">
+                   <img src="/ICYCODE-removebg-preview.jpg"  alt="logo"/>
+                 </div class="right"> 
+                 <div>
+                
+               </div>
+               </div>
+               <div class="back">
+                <div class="left">
+                   <img src="/ICYCODE-removebg-preview.jpg"  alt="logo"width="30px" length="30px" />
+                </div>
+                <div class="right">
+                    
+                  <div class="name">MARTIN WACHIRA</div>
+                  <div class="phone">+254-705-112-077</div>
+                  <div class="location">Nairobi, Kenya</div>
+                  <div class="founder">Co-founder</div>
+                </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>
